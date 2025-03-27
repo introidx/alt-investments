@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  // Get the base path from the environment or use a default
+  const basePath = process.env.NODE_ENV === 'production' ? '/alt-investment' : '';
+
   return (
     <main className="min-h-screen bg-white">
       {/* Navigation */}
@@ -10,8 +13,8 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             <div className="text-2xl font-bold text-gray-900">Alt Investments</div>
             <div className="flex items-center gap-8">
-              <Link href="#features" className="text-gray-700 hover:text-gray-900 font-medium">Features</Link>
-              <Link href="#about" className="text-gray-700 hover:text-gray-900 font-medium">About</Link>
+              <a href="#features" className="text-gray-700 hover:text-gray-900 font-medium">Features</a>
+              <a href="#about" className="text-gray-700 hover:text-gray-900 font-medium">About</a>
               <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 font-medium">
                 Get Started
               </button>
