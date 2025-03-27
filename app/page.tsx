@@ -10,7 +10,6 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             <div className="text-2xl font-bold text-gray-900">Alt Investments</div>
             <div className="flex items-center gap-8">
-              <Link href="/blogs" className="text-gray-700 hover:text-gray-900 font-medium">Blog</Link>
               <Link href="#features" className="text-gray-700 hover:text-gray-900 font-medium">Features</Link>
               <Link href="#about" className="text-gray-700 hover:text-gray-900 font-medium">About</Link>
               <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 font-medium">
@@ -34,12 +33,9 @@ export default function Home() {
                 Seamlessly integrate, automate, and drive smarter decisions—whether you're managing personal budgets or scaling a global enterprise.
               </p>
               <div className="flex gap-4">
-                <Link 
-                  href="/blogs"
-                  className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
-                >
-                  Explore Articles
-                </Link>
+                <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                  Get Started
+                </button>
                 <button className="border border-gray-300 px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors text-gray-700 font-medium">
                   Learn More
                 </button>
@@ -154,8 +150,8 @@ export default function Home() {
               <h4 className="font-semibold mb-4 text-white">Company</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-gray-300 hover:text-white">About</a></li>
-                <li><Link href="/blogs" className="text-gray-300 hover:text-white">Blog</Link></li>
                 <li><a href="#" className="text-gray-300 hover:text-white">Careers</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white">Contact</a></li>
               </ul>
             </div>
             <div>
